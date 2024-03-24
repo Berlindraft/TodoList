@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2c2a2a;
+    background-image:
+    radial-gradient(at 58% 18%, hsla(351,98%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 40% 31%, rgb(90, 233, 168) 0px, transparent 50%),
+    radial-gradient(at 92% 90%, hsla(176,89%,61%,1) 0px, transparent 50%),
+    radial-gradient(at 79% 22%, hsla(266,74%,69%,1) 0px, transparent 50%);
+}
+.todo-container{
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.container-top, .container-down{
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-top{
+    background: linear-gradient(115.7deg, rgb(3, 79, 135) 6.2%, rgb(0, 184, 214) 112.9%);
+    height: 50px;
+    border-radius: 50px 50px 0 0;
+
+
+}
+.container-top, h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container-down{
+    border-radius: 0 0 50px 50px;
+    
+
+}
+.inputf {
+    /* position: fixed; */
+    width: fit-content;
+    background: #edeef0;
+    border-radius: 30px;
+    padding: 8px 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+
+
+}
+.inputf > input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 20px;
+    font-size: 16px;
+} 
+.inputf > button{
+    border: none;
+    outline: none;
+    background: black;
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+
+} 
+ul li{
+    position: relative;
+    top: 10px;
+    left: -80px;
+    list-style: none;
+    font-size: 16px;
+    padding: 8px 8px 5px 8px;
+    user-select: none;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 2;
+}
+.list-item::before {
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 1100;
+    content: "\f14a";
+    left: -10px;
+}
+.list-item::after{
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    content: "\f057";
+    left: 20px;
+}
+.task-done {
+    color: #555;
+    text-decoration: line-through;
+    font-weight: 900;
+    content: "\f14a";
+}
+
+
+.Eltitle::after{
+    position: relative;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 500;
+    content: "\f249";
+    left: 20px;
+}
+
+
